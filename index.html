@@ -5,17 +5,16 @@
     <meta property="og:title" content="あやしい記事" />
     <meta property="og:description" content="あやしい説明" />
     <meta property="og:image" content="https://github.uesugi.app/img/my_icon.jpg" />
-    
-    <script>
-        const blob = new Blob(['あやしいでーた'], {type: 'application/zip'});
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement("a");
-        document.body.appendChild(a);
-        a.download = 'あやしい.zip';
-        a.href = url;
-        a.click();
-        a.remove();
-        URL.revokeObjectURL(url);
-    </script>
 </head>
 なにもないよ
+<script>
+    const blob = new Blob(['あやしいでーた'], {type: 'application/zip'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    document.body.appendChild(a);
+    a.download = 'あやしい.zip';
+    a.href = url;
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+</script>
